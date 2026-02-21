@@ -1,32 +1,46 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>repit</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details of Users</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 </head>
+
 <body>
-    <div class="container">
-        <h1>School Registration</h1>
-        <form action="submit_registration.php" method="post">
-            <label for="school_name">School Name:</label>
-            <input type="text" id="school_name" name="school_name" required>
 
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required>
+  <h1>Details of Users</h1>
 
-            <label for="contact_person">Contact Person:</label>
-            <input type="text" id="contact_person" name="contact_person" required>
+  <form>
+    <fieldset>
+      <legend>Personal Information:</legend>
+      <label>First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label>Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label>Gender:</label><br><br>
+      <input type="radio" name="subject" value="Male"> Male<br><br>
+      <input type="radio" name="subject" value="Female"> Female<br><br>
+      <input type="radio" name="subject" value="Other"> Other<br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="email">Password:</label>
+      <input type="password" name="password"><br><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+      <label for="email">Image:</label><br><br>
+      <input type="file" name="fileupload" accept="image/*" /><br><br><br><br>
+      <center>
+        <input type="submit" name="submit" value="Submit" />
+        <input type="reset" name="reset" value="Reset" />
+      </center>
+    </fieldset>
+  </form>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <button type="submit">Register</button>
-        </form>
-    </div>
 </body>
+
 </html>
+
