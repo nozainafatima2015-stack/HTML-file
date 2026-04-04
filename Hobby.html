@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Replit</title>
+    <Style>
+        .hobby-container {
+    display: grid;
+    /* Creates 3 equal columns that adjust to the screen size */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Adds space between the grid items */
+    padding: 20px;
+}
+ 
+}
+.hobby-card {
+    background-color: #aa00ff;
+    border: 1px solid #ce77f6;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .hobby-container {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+}
+
+
+    </Style>
+    </head>
+    <body>
+        <div class="hobby-container">
+            <div class="hobby-card">Drawing</div>
+            <div class="hobby-card">Reading</div>
+            <div class="hobby-card">Coding</div>
+            <div class="hobby-card">Watching Movies</div>
+            <div class="hobby-card">Taekwondo</div>
+            <div class="hobby-card">Cooking</div>
+        </div>
+
+    </body>
+</html>
