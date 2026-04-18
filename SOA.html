@@ -1,0 +1,28 @@
+<body>
+    <p>Sum of arguments and Math objects</p>
+    <p id="demo"></p>
+
+    <script>
+        function sumAll() {
+            var sum = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+            return sum; // Return after the loop finishes
+        }
+
+        // Convert degrees to radians: (degrees * Math.PI / 180)
+        var rad = 45 * Math.PI / 180;
+
+        var value = Math.sin(rad);
+        document.write("Sin 45 is : " + value + "<br>");
+
+        var value1 = Math.cos(rad);
+        document.write("Cos 45 is : " + value1 + "<br>");
+
+        var value2 = Math.tan(rad);
+        document.write("Tan 45 is : " + value2 + "<br>");
+
+        document.getElementById("demo").innerHTML = "The total sum is: " + sumAll(1, 123, 500, 115, 44, 88);
+    </script>
+</body>
