@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real time validation using JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding:0;
+    }
+    h1 {
+        margin: 30px 0 10px;
+        font-size:34px;
+        font-weight: bold;
+    }
+    hr{
+        width: 50%;
+        border: none;
+         border-top: 2px solid #ddd;
+      margin-bottom: 25px;
+    }
+
+    .box{
+      width: 420px;
+      margin: auto;
+      border: 2px solid #bbb;
+      padding: 18px;
+    }
+
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    label{
+      width: 90px;
+      text-align: right;
+      font-size: 18px;
+    }
+
+    input{
+      height: 24px;
+      padding: 4px;
+      border: 1px solid #999;
+    }
+
+    #email, #password{ width: 170px; }
+    #age{ width: 55px; }
+
+    button{
+      margin-top: 10px;
+      padding: 4px 14px;
+      cursor: pointer;
+    }
+
+    #message{
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: 500;
+    }
+    </style>
+    <h1>REAL TIME USING VALIDATION LIKE THIS JS</h1>
+    <hr>
+    
+    <div class="box">
+        <form id="loginForm">
+            <div class="row">
+                <label>Email:</label>
+                <input type="text" id="email" placeholder="myname@gmail.com">
+            </div>
+    
+            <div class="row">
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="........">
+            </div>
+    
+            <div class="row">
+                <label>Age:</label>
+                <input type="number" id="age">
+            </div>
+    
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <p id="message"></p>
+    
+    <script src="script.js"></script>
+</head>
