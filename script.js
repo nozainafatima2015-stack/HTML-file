@@ -28,3 +28,4 @@ document.getElementById("loginForm").onsubmit = validate;
 document.getElementById("email").oninput = () => validate({ preventDefault: () => {} });
 document.getElementById("password").oninput = () => validate({ preventDefault: () => {} });
 document.getElementById("age").oninput = () => validate({ preventDefault: () => {} });
+document.getElementById("message").onblur = () => validate({ preventDefault: () => {} });
