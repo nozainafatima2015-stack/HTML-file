@@ -1,0 +1,23 @@
+ <body>
+    <h2>JavaScript Datatypes, Let keyword and Loops</h2>
+    <p id="result"></p>
+
+    <script>
+        // 1. Fixed the Random Number logic
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
+        document.getElementById("result").innerHTML = "Random Number: " + randomNumber;
+
+        // 2. Fixed the loop scope
+        let i = 0; // Declare i where the loop can see it
+        let text = "";
+
+        while (i < 10) {
+            text += "The values inside the block: " + i + "<br>";
+            i++;
+        }
+
+        // 3. Write the results to the page
+        document.write(text);
+        document.write("The value of i outside the block is: " + i);
+    </script>
+</body>
